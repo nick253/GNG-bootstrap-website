@@ -8,21 +8,104 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Gerald</title>
+    <style>
+
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        .row.content {
+            height: 450px
+        }
+
+        /* Set gray background color and 100% height */
+        .sidenav {
+            padding-top: 20px;
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+
+            .row.content {
+                height: auto;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1><strong>Gerald</strong></h1>
-    <div class="flex-container">
-        
-        <div class="profile">
-            <img class="img-responsive img-circle smaller-image" src="Gerald.jpg" alt="">
-            <h2 class="font">Gerald Adamson</h2>
-            <h3 class="font">Biography</h3>
-            <p class="font">
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">GNG</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="Index.html">Home</a></li>
+                    <li class="active"><a href="#">Grant</a></li>
+                    <li><a href="Nick.html">Nick</a></li>
+                    <li><a href="Gerald.html">Gerald</a></li>
+                    <li><a href="TeamGame.html">Team Game</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center">
+        <div class="col-sm-2 sidenav">
+
+        </div>
+        <div class="col-sm-8 text-left">
+            <h1>Gerald Adamson</h1>
+            <img class="img-responsive img-circle smaller-image" src="Gerald.jpg" alt="Image of Gerald">
+       
+            <p>
                 I love to learn. I have a Bachelor’s in Philosophy, which I believe is an excellent tool for truth and self-discovery.
                 I am currently working on my second degree in Gaming and Interactive Media at Boise State.
                 It is my goal to create virtual reality games and short films that will increase public awareness and action for global conservation.
             </p>
+            <h3>Skills</h3>
+            <li>Video and Photography Editing</li>
+            <li>Interactive Media Design</li>
+            <li>Script Writing</li>
+            <br />
+            <li>
+                Coding Languages:
+                <ul>
+                    <li>C#</li>
+                    <li>ActionScript</li>
+                    <li>Xamarin</li>
+                    <li>CSS and Bootstrap</li>
+                </ul>
+            </li>
         </div>
     </div>
+</div>
+
+    <footer class="container-fluid text-center">
+        <p>GNG 2018</p>
+    </footer>
+
 </body>
 </html>
